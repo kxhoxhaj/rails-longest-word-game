@@ -1,0 +1,5 @@
+<h1>Result</h1>
+<% if params[:word].include? @letters %>
+  <%= puts "Sorry but #{params[:word]} cant be build out of #{@letters}" %>
+<% end %>
+<%= link_to "Play Again", new_path %>
